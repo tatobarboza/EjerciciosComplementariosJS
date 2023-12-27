@@ -6,15 +6,7 @@ let nom5 = "alcancio"
 
 const nombreIngresado = prompt("Ingrese un nombre a comparar.")
 
-if (nombreIngresado === nom1) {
-    alert("Fui yo")
-} else if (nombreIngresado === nom2){
-    alert("Fui yo")
-} else if (nombreIngresado === nom3) {
-    alert("Fui yo")
-} else if (nombreIngresado === nom4) {
-    alert("Fui yo")
-} else if (nombreIngresado === nom5) {
+if (nombreIngresado === nom1 || nombreIngresado === nom2 || nombreIngresado === nom3 || nombreIngresado === nom4 || nombreIngresado === nom5) {
     alert("Fui yo")
 } else alert("No fui yo");
 
