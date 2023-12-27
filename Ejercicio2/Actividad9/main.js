@@ -6,4 +6,4 @@ if (numero <= 1000 && !NaN) {
     alert("Usted cuenta con un presupuesto medio.")
 } else if (numero > 3000 && !NaN) {
     alert("Usted cuenta con un presupuesto alto.")
-} else alert("Usted no ha ingresado un numero. Vuelva a intentarlo.")
+} else alert("Intente colocar un número. Vuelva a intentarlo.")
