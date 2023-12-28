@@ -29,5 +29,5 @@ if (cotizacion == 1)  {
 } else if (cotizacion != 1 || cotizacion != 2 || cotizacion == NaN) {
     alert("Esa no es una operación valida")
 } else {
-    alert("Intentenlo de nuevo.")
+    alert("Intentenlo de nuevo.") // no se si es necesario o no este else. Lo pongo por las dudas, aunque lo he probado sin y funciona perfectamente. 
 }

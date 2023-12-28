@@ -4,6 +4,8 @@
 // * Notas actividad 3
 // * Un impuesto es la suma de un monto al precio inicial. Buscamos calcular en la función el porcentaje sobre dicho precio, y sumarlo; por ejemplo: si el precio es 100, el 20% es 20, entonces el precio final es 100+20 = 120.
 
+
+// * Ejemplo 1: itero 5 veces la funcion impuesto y va pidiendo los datos a ingresar.
 /* 
 
 let precio
@@ -22,6 +24,10 @@ for (let i = 0; i < 5; i++) {
 }
 
 */
+
+// puse las formas en que lo he hecho, no sé si una es más correcta que la otra. 
+
+// * Ejemplo 2: itero 5 veces los datos a ingresar y voy pasandole los parametros a impuesto
 
 let precio
 let porcentaje
