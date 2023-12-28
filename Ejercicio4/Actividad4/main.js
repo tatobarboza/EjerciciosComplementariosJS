@@ -1,39 +1,33 @@
-// * Codificar una función con la siguiente cabecera: impuesto (precio, porcentaje). En ella, se retorna un valor numérico compuesto por el precio recibido, más la suma del porcentaje ingresado.
-// * Luego invocar la función de forma iterativa cinco (5) veces, solicitando en cada ciclo un precio y porcentaje al usuario.
+// * Codificar dos funciones:
+// *  Una función cotizarDolar(pesos), la cual recibe un valor monetario en pesos argentinos, y lo retorna en su equivalente en dólares.
+// *  Una función cotizarPesos(dolar), que recibe un valor monetario en dólares, y lo retorna en su equivalente en pesos argentinos.
+// *  Luego invocar las funciones solicitando  al usuario el valor y el tipo de cotización a realizar.
 
-// * Notas actividad 3
-// * Un impuesto es la suma de un monto al precio inicial. Buscamos calcular en la función el porcentaje sobre dicho precio, y sumarlo; por ejemplo: si el precio es 100, el 20% es 20, entonces el precio final es 100+20 = 120.
+// notas
+// * Notas actividad 4
+// *Es posible cambiar la moneda a cotizar. Lo importante es codificar dos funciones que hagan operaciones contrarias (inversas). 
+let valor1
 
-/* 
+function cotizarDolar(pesos) {
+    valor1 = pesos / 1100
+    return valor1
+};
 
-let precio
-let porcentaje
+function cotizarPesos(dolar) {
+    valor1 = dolar * 1100
+    return valor1
+};
+let cotizacion = prompt("Ingrese 1: cotizacion dolar o 2: cotizacion pesos")
+let entrada
 
-function impuesto (precio,porcentaje) {
-    precio = Number(prompt("Ingrese un precio"))
-    porcentaje = Number(prompt("Ingrese el porcentaje a sumarle."));
-    let valor = precio + (precio * porcentaje / 100)
-    return alert(valor)
-}
-
-
-for (let i = 0; i < 5; i++) {
-    impuesto()
-}
-
-*/
-
-let precio
-let porcentaje
-
-function impuesto (precio,porcentaje) {
-    let valor = precio + (precio * porcentaje / 100)
-    return alert(valor)
-}
-
-
-for (let i = 0; i < 5; i++) {
-    precio = Number(prompt("Ingrese un precio"))
-    porcentaje = Number(prompt("Ingrese el porcentaje a sumarle."));
-    impuesto(precio,porcentaje)
+if (cotizacion == 1)  {
+    entrada = Number(prompt("Ingrese el monto a cotizar"))
+    alert(`El monto en dolares da un total de: ${cotizarDolar(entrada)}`)
+} else if (cotizacion == 2) {
+    entrada = Number(prompt("Ingrese el monto a cotizar"))
+    alert(`El monto en pesos da un total de: ${cotizarPesos(entrada)}`)
+} else if (cotizacion != 1 || cotizacion != 2 || cotizacion == NaN) {
+    alert("Esa no es una operación valida")
+} else {
+    alert("Intentenlo de nuevo.")
 }
