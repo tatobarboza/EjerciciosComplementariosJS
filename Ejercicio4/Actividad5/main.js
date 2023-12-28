@@ -3,4 +3,14 @@
 // * Notas actividad 5
 // * Es común emplear funciones para validar si un valor recibido por parámetro cumple con cierto formato. La comparación de cadena vacía es (cadena != ‘’)
 
+let valor
 
+function validacion(cadena) {
+    return (cadena != "")
+
+}
+
+while (valor !== "ESC") {
+    valor = prompt("Ingrese palabras. Ingrese ESC si desea terminar.")
+    console.log(validacion(valor));
+}
