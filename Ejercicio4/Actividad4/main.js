@@ -4,12 +4,36 @@
 // * Notas actividad 3
 // * Un impuesto es la suma de un monto al precio inicial. Buscamos calcular en la función el porcentaje sobre dicho precio, y sumarlo; por ejemplo: si el precio es 100, el 20% es 20, entonces el precio final es 100+20 = 120.
 
+/* 
+
+let precio
+let porcentaje
+
+function impuesto (precio,porcentaje) {
+    precio = Number(prompt("Ingrese un precio"))
+    porcentaje = Number(prompt("Ingrese el porcentaje a sumarle."));
+    let valor = precio + (precio * porcentaje / 100)
+    return alert(valor)
+}
+
+
+for (let i = 0; i < 5; i++) {
+    impuesto()
+}
+
+*/
+
+let precio
+let porcentaje
 
 function impuesto (precio,porcentaje) {
     let valor = precio + (precio * porcentaje / 100)
-    return valor
+    return alert(valor)
 }
-let valor1 = Number(prompt("Ingrese un precio"))
-let valor2 = Number(prompt("Ingrese el porcentaje a sumarle."))
 
-alert((impuesto(valor1,valor2)))
+
+for (let i = 0; i < 5; i++) {
+    precio = Number(prompt("Ingrese un precio"))
+    porcentaje = Number(prompt("Ingrese el porcentaje a sumarle."));
+    impuesto(precio,porcentaje)
+}
