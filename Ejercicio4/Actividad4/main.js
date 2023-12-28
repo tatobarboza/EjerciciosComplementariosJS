@@ -8,6 +8,9 @@
 // *Es posible cambiar la moneda a cotizar. Lo importante es codificar dos funciones que hagan operaciones contrarias (inversas). 
 let valor1
 
+
+//en la resolucion utiliza funciones flecha, me gusta la idea de hacerlo con funciones flecha porque tambien se ahorra el return. Lo tendré en cuenta.
+
 function cotizarDolar(pesos) {
     valor1 = pesos / 1100
     return valor1

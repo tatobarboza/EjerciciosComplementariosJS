@@ -28,7 +28,6 @@ for (let i = 0; i < 5; i++) {
 // puse las formas en que lo he hecho, no sé si una es más correcta que la otra. 
 
 // * Ejemplo 2: itero 5 veces los datos a ingresar y voy pasandole los parametros a impuesto
-
 let precio
 let porcentaje
 
@@ -36,7 +35,6 @@ function impuesto (precio,porcentaje) {
     let valor = precio + (precio * porcentaje / 100)
     return alert(valor)
 }
-
 
 for (let i = 0; i < 5; i++) {
     precio = Number(prompt("Ingrese un precio"))
