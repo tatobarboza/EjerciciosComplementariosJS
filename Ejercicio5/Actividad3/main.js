@@ -17,10 +17,15 @@ class Tienda {
     }
 }
 
-let persona1 = new Tienda(prompt("Ingrese el nombre del local"),Number(prompt("Hora"))
-);
-console.log(`${persona1.abierto ? "Abierto" : "Cerrado"}`);
-alert(`El local ${persona1.lugar} se encuentra: ${persona1.abierto ? "Abierto" : "Cerrado"}`)
+let primerConsulta = new Tienda("Farolito", Number(prompt("Hora")));
+let segundaConsulta = new Tienda("Farolito", Number(prompt("Hora")));
+let tercerConsulta = new Tienda("Farolito", Number(prompt("Hora")));
+
+
+alert(`El local ${primerConsulta.lugar} a las ${primerConsulta.hora} se encuentra: ${primerConsulta.abierto ? "Abierto" : "Cerrado"} \n
+El local ${segundaConsulta.lugar} a las ${segundaConsulta.hora} se encuentra: ${segundaConsulta.abierto ? "Abierto" : "Cerrado"} \n
+El local ${tercerConsulta.lugar} a las ${tercerConsulta.hora} se encuentra: ${tercerConsulta.abierto ? "Abierto" : "Cerrado"} 
+`)
 
 // * creando un string con backtics y preguntando si `${persona1.abierto ? "Abierto" : "Cerrado"}`
 // * para valores booleanos que pueda aplicar una opcion o la otra en caso de que sea true o false.
