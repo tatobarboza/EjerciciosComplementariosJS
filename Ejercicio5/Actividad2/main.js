@@ -65,3 +65,5 @@ alert(ingresados);
 //* cuando lo hice arriba me pareció mejor crear un array que contenga dentro todos los datos.
 //* el problema del que habia planteado es que sólo me dejaba ver lo que colocaba en la iteracion, no lo habia puesto para que se guarde todo dentro de una variable. 
 
+
+
