@@ -8,7 +8,7 @@ class Cliente {
     }
 
     transferirDinero() {
-        let valor = Number(prompt("Ingrese un valor a verificar"));
+        let valor = parseFloat(prompt("Ingrese un valor a verificar"));
 
         if (valor > 0 && valor <= this.presupuesto) {
             this.presupuesto -= valor
@@ -34,3 +34,4 @@ const persona3 = new Cliente("juancito", 3230, true, 1150405050);
 alert(`${persona1.nombre}: ${persona1.saberSi()} ${persona1.transferirDinero()}`);
 alert(`${persona2.nombre}: ${persona2.saberSi()} ${persona2.transferirDinero()}`);
 alert(`${persona3.nombre}: ${persona3.saberSi()} ${persona3.transferirDinero()}`);
+
