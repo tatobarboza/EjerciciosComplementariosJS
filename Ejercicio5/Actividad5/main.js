@@ -4,7 +4,7 @@ class Cliente {
         this.presupuesto = Number(presupuesto);
         this.tarjeta = tarjeta;
         this.contacto = contacto;
-        this.exitosa = false;
+        this.exitosa 
     }
 
     transferirDinero() {
@@ -22,7 +22,7 @@ class Cliente {
          
     }
     saberSi() {
-        return this.exitosa ? "El monto fue correcto. Su nuevo balance es:" : "Lamentablemente no fue correcta la transacción, usted continúa teniendo:"
+        return `${this.exitosa ? "El monto fue correcto. Su nuevo balance es:" : "Lamentablemente no fue correcta la transacción, usted continúa teniendo:"}`
     }
 
 }
