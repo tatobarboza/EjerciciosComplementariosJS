@@ -18,8 +18,10 @@ _______________________
 Ejercicio 6 actividad 4
 
 carAt selecciona la posicion del string indicado
-y slice se refiere al string a partir de la posicion que le digamos.
+y slice genera una copia desde la posicion que le digamos
 en este caso, carAt selecciona la posicion cero (primera letra) y la convierte en mayuscula.
 Mientras slice selecciona el resto de lapalabra (a partir de la posicion 1) y la convierte en minuscula. 
 
 const palabraCorregida = (palabra) => palabra.carAt(0).toUpperCase + palabra.slice(1).toLowerCase();
+
+Correcion de sintaxis: todos los array es mejor declararlos con const

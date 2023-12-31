@@ -319,10 +319,8 @@ console.log(nombres[0]); */
 
 /* const numeros = [1, 2, 3, 4, 5, 6];
 console.log(numeros[0] + numeros[4]); 
-
-
 */
-
+/* // * respuesta de la consola */
 /*  
 *es muy comun usar un for con los ARRAYS 
 */
@@ -351,7 +349,7 @@ for (let i = 0; i < 4; i++) {
 *          la cantidad de valores que contenga.
 */
 /*  
-const productos = ["galleta", "cafe", "mate", "leche", "fideos", "chocolate", "cantidad"];
+const productos = ["galleta", "cafe", "mate", "leche", "fideos", "chocolate"];
 
 for (let i = 0;i < productos.length; i++){
     console.log(`Veo producto ${productos[i]} lo busco y lo agrego al carrito.`);
@@ -411,13 +409,13 @@ console.log(copia);
 *               eliminar = 2                 (cafe y mate)
  */
 /* 
-*                   Elimina varios elementos
+*                 Elimina varios elementos
 const productos = ["galleta", "cafe", "mate", "leche", "fideos", "chocolate"];
 productos.splice(1, 2); // elimina varios elementos del arreglo
 console.log(productos);
  */
 /* 
-*                          Elimina sólo uno
+*                        Elimina sólo uno
 const productos = ["galleta", "cafe", "mate", "leche", "fideos", "chocolate"];
 productos.splice (3, 1); // elimina solamente leche del array(posicion 3, cantidad 1)
 console.log(productos); 
@@ -439,15 +437,18 @@ console.log(productos); */
 *                           JOIN
 *               Une todos los elementos del arreglo en un solo arreglo separados por lo que yo le ponga entre los parentesis
  */
+
 /* 
 const productos = ["galleta", "cafe", "mate", "leche", "fideos", "chocolate"];
-
-// console.log(productos.join("")); //Une los elementos del arreglo en un string separado por el parametro
-
 const personas = ["andres", "camila", "luis", "Juan"];
 const varios = productos.concat(personas)
 
 console.log(varios);
+console.log(productos.join("")) // Une los elementos del arreglo en un string separado por el parametro
+
+// Une los elementos del arreglo en un string separado por el parametro
+
+
 
  */
 /* 
@@ -798,8 +799,8 @@ const numeros = [4, 5, 6, 7, 8];
 
 let total = numeros.reduce((acum, item) => acum + item, 0)
 console.log(total);
-
  */
+
 /* 
 *               EJEMPLO CARRITO DE COMPRAS = Precio total
 *en este caso el reduce podria ser usado para sumar el total de todo el carrito de compras del usuario 

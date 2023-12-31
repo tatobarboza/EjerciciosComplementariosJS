@@ -41,16 +41,17 @@ for(let i = 0; i < 5;i++) {
 };
 /* 
 //* estaba probando la resolucion del ejercicio de coder. No habia pensado en crear una funcion que guarde lo que encontraba dentro para luego mostrarlo. El codigo que yo hice al iterar muestra los resultados en alerts distintos, este muestra todos los resultados en uno solo.
+
 function filtroJugadores(equipo, edad) {
     return equipo.filter(objeto => objeto.edad == parseInt(edad));
 }
-//*  function listaJugadores(jugadores) {
-//*     let lista = "";
-//*     for (const jugador of jugadores) {
-//*         lista += `Jugador: ${jugador.nombre}, camiseta: ${jugador.numeroCamiseta}. Tiene ${jugador.edad} años \n`
-//*     }
-//*     return lista;
-//* }
+  function listaJugadores(jugadores) {
+     let lista = "";
+     for (const jugador of jugadores) {
+         lista += `Jugador: ${jugador.nombre}, camiseta: ${jugador.numeroCamiseta}. Tiene ${jugador.edad} años \n`
+     }
+     return lista;
+ }
 
 //* crea una funcion que crea una lista, en ella se van a guardar los datos que se vayan encontrando y con el for of se van a ir imprimiendo dentro de lista, por ultimo devuelve la lista con todos los resultados dentro.
 
