@@ -1,14 +1,12 @@
-
 const  jugadores = []
 
 class Jugador {
-    constructor (nombre,numeroCamiseta, edad, lesionado) {
+    constructor (nombre, numeroCamiseta, edad, lesionado) {
         this.nombre = nombre
         this.numeroCamiseta = numeroCamiseta
         this.edad = edad
         this.lesionado = lesionado
     }
-
 }
 
 jugadores.push(new Jugador ("Juan", 77, 24, false))
@@ -26,9 +24,7 @@ jugadores.push(new Jugador ("Juano", 66, 23, true))
 
 // * El método find permite encontrar un elemento en el array. Como estamos trabajando con array de objetos, usamos la notación punto para verificar el valor de las propiedades.
 
-const buscarJugador = (jugadors,jugador)  => jugadors.find(array => array.nombre = jugador);
-
-const palabraBien = palabra => palabra.carAt(0).toUpperCase + palabra.slice(1).toLowerCase();
+const buscarJugador = (jugadors, jugador) => jugadors.find(array => array.nombre.toUpperCase() == jugador.toUpperCase());
 
 for (let i = 0; i < 4; i++) {
     let busqueda = buscarJugador(jugadores, prompt("Ingresar nombre de jugador a comprobar"));
