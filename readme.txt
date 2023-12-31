@@ -86,3 +86,49 @@ Arreglos:
  ejemplo con los nombres 
  a.name > b.name
  a.name < b.name
+
+Objeto .Math
+---------------------------------------------
+                MIN y MAX 
+*   min     Math.min(ejemplo)
+*   max     Math.max(ejemplo)
+---------------------------------------------
+                Redondea
+*   ceil    Math.ceil  (hacia el entero de arriba)
+*   floor   Math.floor (hacia el entero de abajo)
+*   round   Math.round (hacia el entero más cercano)
+---------------------------------------------
+                Raiz cuadrada
+*   sqrt    Math.sqrt(ejemplo)
+---------------------------------------------
+                random
+* random    Math.random
+
+Ejemplo: 
+const generarAleatorio = (amplitud, desplazamiento) => {
+    return Math.round(Math.random() * amplitud + desplazamiento);
+};
+
+console.log(generarAleatorio(85, 5)); // genera numeros aleatorios entre 5 y 90.
+---------------------------------------------
+                Document objects models (DOM)
+
+console.log(document.body); //empezamos a linkear javascript con html.
+
+*       getElementById() 
+*       getElementsByClassName()
+*       getElementsByTagName() 
+
+            Creacion de nodos (etiquetas en html)
+
+*crea parrafo*
+let parrafo = document.createElement("p");
+
+*asigna contenido*
+parrafo.innerHTML = "<h1> Hola!</h1>";
+
+*asignacion de padre*
+
+document.body.append(parrafo)
+
+append (adjuntar/agregar)

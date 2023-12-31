@@ -1156,11 +1156,6 @@ parrafo.innerHTML = "<h1> Hola Coder!</h1>";
 document.body.append(parrafo)
 
  */
-/* 
-
-Puede ser util saber que puedes encontrar la longitud de un string escribiendo .lenth despues de él:
-
- */
 
 // let cantidad = prompt("¿cuantos alumnos son?");
 // let alumnosTotales = [];
