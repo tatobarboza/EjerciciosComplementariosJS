@@ -111,7 +111,7 @@ const generarAleatorio = (amplitud, desplazamiento) => {
 
 console.log(generarAleatorio(85, 5)); // genera numeros aleatorios entre 5 y 90.
 ---------------------------------------------
-                Document objects models (DOM)
+               Document objects models (DOM)
 
 console.log(document.body); //empezamos a linkear javascript con html.
 
@@ -121,14 +121,12 @@ console.log(document.body); //empezamos a linkear javascript con html.
 
             Creacion de nodos (etiquetas en html)
 
-*crea parrafo*
+*        crea parrafo
 let parrafo = document.createElement("p");
 
-*asigna contenido*
+*        asigna contenido
 parrafo.innerHTML = "<h1> Hola!</h1>";
 
-*asignacion de padre*
-
+*        asignacion de padre
 document.body.append(parrafo)
-
 append (adjuntar/agregar)
