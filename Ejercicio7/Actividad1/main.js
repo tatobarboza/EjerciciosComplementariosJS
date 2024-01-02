@@ -3,3 +3,9 @@
 //notas
 
 //*  Con localStorage almacenamos datos que pueden ser útiles en el próximo uso de la aplicación. Recordemos que al refrescar la página, el script se vuelve a interpretar.
+
+const numeros = [1, 2, 3, 4, 5, 6]
+
+numeros.forEach( (num)=> {
+    console.log(num)
+} )
