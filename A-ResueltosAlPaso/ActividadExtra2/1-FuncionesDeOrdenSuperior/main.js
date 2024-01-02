@@ -1,5 +1,5 @@
 // Recibir funciones por parametros
-const numeros= [1, 2, 3, 4]
+const numeros = [1, 2, 3, 4]
 
 function porCadaUno(arr, fn) {
     for (const el of arr) {
@@ -103,3 +103,52 @@ console.log(actualizado)
      { nombre: 'AngularJS', precio: 27500 },
      { nombre: 'Desarrollo Web', precio: 20000 }
 ] */
+
+// const numeros = [1, 2, 3, 4, 5, 6]
+
+// *    METODO Reduce
+
+const total = numeros.reduce((acumulador, elemento) => acumulador + elemento, 0)
+console.log(`Metodo reduce, tiene dos parametros, el callback y el elemento a sumar. Va sumando y almacenandolo en "acumulador", el cero en el final es el inicio que toma el metodo reduce. `);
+console.log(total) // 21
+
+console.log(`Otro ejemplo de reduce. Toma todos los precios de lo que podria ser un carrito de compras y los devuelve sumados.`);
+
+const miCompra = [
+    { nombre: 'Desarrollo Web', precio: 20000 },
+    { nombre: 'Javascript', precio: 18750 },
+    { nombre: 'ReactJS', precio: 27500 }
+]
+
+// *    Otro ejemplo de metodo reduce
+const total2 = miCompra.reduce((acc, el) => acc + el.precio, 0)
+console.log(total2) // 66250
+
+
+// *    METODO SORT
+
+
+const numeros2 = [ 40, 1, 5, 200 ];
+numeros2.sort((a, b) => a - b);  // [ 1, 5, 40, 200 ]
+numeros2.sort((a, b) => b - a);  // [ 200, 40, 5, 1 ]
+// * Este metodo es capaz de reordenar las cosas dentro del mismo array y volverlo a sobrescribir.
+
+
+// * Otro ejemplo de sort:
+const items = [
+    { name: 'Pikachu', price: 21 },
+    { name: 'Charmander', price: 37 },
+    { name: 'Pidgey', price: 45 },
+    { name: 'Squirtle', price: 60 }
+  ]
+items.sort((a, b) => {
+    if (a.name > b.name) {
+        return 1;
+    }
+    if (a.name < b.name) {
+        return -1;
+    }
+    // a es igual a b
+    return 0;
+})
+
