@@ -3,3 +3,5 @@
 //notas
 
 //*  Con localStorage almacenamos datos que pueden ser útiles en el próximo uso de la aplicación. Recordemos que al refrescar la página, el script se vuelve a interpretar.
+const o = ["hola", "Como", "estas"]
+

@@ -4,7 +4,7 @@ class Cliente {
         this.presupuesto = Number(presupuesto);
         this.tarjeta = tarjeta;
         this.contacto = contacto;
-        this.exitosa 
+        this.exitosa
     }
 
     transferirDinero() {
@@ -31,7 +31,9 @@ const persona1 = new Cliente("juan", 1150, true, 1150505050);
 const persona2 = new Cliente("manolito", 1550, true, 1150305050);
 const persona3 = new Cliente("juancito", 3230, true, 1150405050);
 
-alert(`${persona1.nombre}: ${persona1.saberSi()} ${persona1.transferirDinero()}`);
-alert(`${persona2.nombre}: ${persona2.saberSi()} ${persona2.transferirDinero()}`);
-alert(`${persona3.nombre}: ${persona3.saberSi()} ${persona3.transferirDinero()}`);
+let a = persona1.transferirDinero()
+let b = persona1.saberSi()
+alert(`${persona1.nombre}: ${b} ${a}`);
+//alert(`${persona2.nombre}: ${persona2.saberSi()} ${persona2.transferirDinero()}`);
+//alert(`${persona3.nombre}: ${persona3.saberSi()} ${persona3.transferirDinero()}`);
 
